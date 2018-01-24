@@ -1,0 +1,12 @@
+.testImage{
+    border:10px dashed green;
+    text-align: center;
+    width: 593px;
+    height:300px;
+    background: url("image6.jpg") no-repeat;
+    background-size: cover;
+    background-position: -235px 30px;
+}
+.borderbox{
+    background-clip: content-box;
+}

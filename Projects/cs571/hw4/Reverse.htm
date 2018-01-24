@@ -1,0 +1,21 @@
+
+<!-- saved from url=(0052)http://cs-server.usc.edu:45678/examples/dom/ex6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Reverse</title> <script> 
+function reverse(n) 
+ { // Reverse the order of the children of Node n 
+   var kids = n.childNodes; // Get the list of children
+   var numkids = kids.length; // Figure out how many children there are
+   for(var i = 0; i < numkids; i++) { // Loop backward through the children
+      var c = n.removeChild(kids[i]); // Remove a child 
+       console.log(c);
+       n.appendChild(c);// Put it back at its new position
+  } }
+</script> </head> <body class="vsc-initialized"> 
+<p>paragraph #1
+</p><p>paragraph #2
+</p><p>paragraph #3 </p><p> 
+<button onclick="reverse(document.body);">
+   Click Me to Reverse</button> 
+<noscript>&lt;/body&gt;
+
+</noscript></p></body></html>
